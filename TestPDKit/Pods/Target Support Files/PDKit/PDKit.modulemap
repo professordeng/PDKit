@@ -1,0 +1,6 @@
+framework module PDKit {
+  umbrella header "PDKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

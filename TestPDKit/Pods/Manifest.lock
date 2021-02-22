@@ -1,0 +1,16 @@
+PODS:
+  - PDKit (1.0.0)
+
+DEPENDENCIES:
+  - PDKit (from `../PDKit`)
+
+EXTERNAL SOURCES:
+  PDKit:
+    :path: "../PDKit"
+
+SPEC CHECKSUMS:
+  PDKit: ed6857685c2fbcfc2fa99ef4c916760fa9cf9a60
+
+PODFILE CHECKSUM: d668df71cbda9b658618609432c3e91fe8c1db63
+
+COCOAPODS: 1.10.1
