@@ -9,14 +9,19 @@ import UIKit
 import PDKit
 
 class ViewController: UIViewController {
+    
+    let colorView = UIView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(Service.name)
-        
+        colorView.makeStyles {
+            view.addSubview($0)
+            $0.backgroundColor = .gray
+        }.al.make {
+            $0.size(100)
+            $0.centerToSuperview()
+        }
     }
-
-
 }
 

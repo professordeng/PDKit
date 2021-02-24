@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		04894CA025E34F1900238BC6 /* PDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 04894C9E25E34F1900238BC6 /* PDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04894CA825E34F6F00238BC6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04894CA725E34F6F00238BC6 /* Service.swift */; };
+		04894D0125E55B5F00238BC6 /* MakeStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04894D0025E55B5F00238BC6 /* MakeStyles.swift */; };
+		04894D0725E55CBE00238BC6 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04894D0625E55CBE00238BC6 /* Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		04894C9E25E34F1900238BC6 /* PDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDKit.h; sourceTree = "<group>"; };
 		04894C9F25E34F1900238BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04894CA725E34F6F00238BC6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		04894D0025E55B5F00238BC6 /* MakeStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeStyles.swift; sourceTree = "<group>"; };
+		04894D0625E55CBE00238BC6 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 				04894C9E25E34F1900238BC6 /* PDKit.h */,
 				04894C9F25E34F1900238BC6 /* Info.plist */,
 				04894CA725E34F6F00238BC6 /* Service.swift */,
+				04894D0025E55B5F00238BC6 /* MakeStyles.swift */,
+				04894D0625E55CBE00238BC6 /* Layout.swift */,
 			);
 			path = PDKit;
 			sourceTree = "<group>";
@@ -134,7 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04894D0725E55CBE00238BC6 /* Layout.swift in Sources */,
 				04894CA825E34F6F00238BC6 /* Service.swift in Sources */,
+				04894D0125E55B5F00238BC6 /* MakeStyles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
