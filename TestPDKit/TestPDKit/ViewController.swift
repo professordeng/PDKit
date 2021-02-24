@@ -15,9 +15,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        colorView.makeStyles {
+        colorView.make {
             view.addSubview($0)
-            $0.backgroundColor = .gray
+            $0.backgroundColor = Color.black
+            $0.layer.borderWidth = 5
+            $0.layer.borderColor = Color.green.cgColor
         }.al.make {
             $0.size(100)
             $0.centerToSuperview()
@@ -25,3 +27,6 @@ class ViewController: UIViewController {
     }
 }
 
+extension Color {
+    static var black = color(light: 000000, dark: 000000)
+}
