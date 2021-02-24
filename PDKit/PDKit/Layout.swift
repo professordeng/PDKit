@@ -80,7 +80,7 @@ extension LayoutProxy where T: UIView {
         if let view = base.superview {
             center(view)
         } else {
-            assertionFailure("该视图没有父视图。")
+            assertionFailure("It has no superview.")
         }
     }
     
@@ -95,7 +95,7 @@ extension LayoutProxy where T: UIView {
         if let view = base.superview {
             edge(view)
         } else {
-            assertionFailure("该视图没有父视图。")
+            assertionFailure("It has no superview.")
         }
     }
 
