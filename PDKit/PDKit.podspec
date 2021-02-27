@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "professordeng" => "professordeng@qq.com" }
   spec.platform     = :ios, "14.0"
   spec.source       = { :git => "https://github.com/professordeng/PDKit.git", :tag => "1.0.1" }
-  spec.source_files = "PDKit/**/*.{h,m,swift}"
+  spec.source_files = "PDKit/**/*.swift"
   spec.framework    = "UIKit"
   spec.swift_version = '5.3.3'
   
