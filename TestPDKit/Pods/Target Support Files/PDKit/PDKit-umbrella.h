@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "PDKit.h"
 
 FOUNDATION_EXPORT double PDKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char PDKitVersionString[];
