@@ -126,6 +126,13 @@ extension LayoutProxy where T: UIView {
         }
     }
     
+    public func updateCenterY(_ offset: CGFloat = 0) {
+        let superView = base.superview
+        let constraint = superView?.constraints.first(where: { $0.firstAnchor == base.centerYAnchor })
+        constraint?.constant = offset
+        superView?.setNeedsLayout()
+    }
+    
     public func center(_ view: UIView) {
         centerX(view.centerXAnchor)
         centerY(view.centerYAnchor)

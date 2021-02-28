@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		040917364ABDFEA5D9F745786094E8D9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4ACFF06513D84A91001289EEB58EB7 /* Color.swift */; };
+		0423859B25EB8D8D00FB64C4 /* DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423859A25EB8D8D00FB64C4 /* DisplayLink.swift */; };
 		096919C619B8D8806C31AECB789BFF10 /* Pods-TestPDKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E475577CD87064ACF5E4D0E34F7B5063 /* Pods-TestPDKit-dummy.m */; };
 		2BAAEBF8E61D2930DCC19793DA2FFD72 /* MakeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505DECC467B2E5780E840AEBC93EB5CD /* MakeStyle.swift */; };
 		3BC85232993F8157FED4948415A63349 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		7357DB278F9C81ED4AB20975238EAAA5 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98832F7A0F029C367526BB797BEFD41 /* Layout.swift */; };
 		7B98ED7AFA7C1A19557A2609B4B37ECF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE97799CA8B24786111374CF35AE9821 /* Image.swift */; };
-		85E6EBCE6E2B5E324E7B8C7BFC8B902F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506452F049B1DA332F4789CE1D8EB650 /* Service.swift */; };
 		A211E833A14CE99B0FB09529820B9554 /* PDKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6157412A9E4D01B500D8A224D5A634 /* PDKit-dummy.m */; };
 		A7A3D013E0971050ABDFCA0148FC4799 /* Pods-TestPDKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D37B93F0937A553A9AE28FF00F9A54E9 /* Pods-TestPDKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B10B4636A8D40FADB82FB96E0026F7B2 /* PDKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5C0DF24280D4B4554FEE4244742E9B /* PDKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,25 +32,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0423859A25EB8D8D00FB64C4 /* DisplayLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayLink.swift; path = PDKit/DisplayLink.swift; sourceTree = "<group>"; };
 		086A9AB4040187D9F19AE3439E8402A1 /* PDKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDKit-prefix.pch"; sourceTree = "<group>"; };
 		1F5C0DF24280D4B4554FEE4244742E9B /* PDKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDKit-umbrella.h"; sourceTree = "<group>"; };
 		219BCC08CBC640DB5A2B02B1D2438A00 /* Pods-TestPDKit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestPDKit-frameworks.sh"; sourceTree = "<group>"; };
-		3790AE1454075461D2087620F2817166 /* Pods_TestPDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TestPDKit.framework; path = "Pods-TestPDKit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3790AE1454075461D2087620F2817166 /* Pods_TestPDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4647F3C8217B13E329618D60C1464EEF /* PDKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PDKit.modulemap; sourceTree = "<group>"; };
 		505DECC467B2E5780E840AEBC93EB5CD /* MakeStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MakeStyle.swift; path = PDKit/MakeStyle.swift; sourceTree = "<group>"; };
-		506452F049B1DA332F4789CE1D8EB650 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = PDKit/Service.swift; sourceTree = "<group>"; };
 		5F502C9E35138F0AB8BF63B1FD9D6871 /* Pods-TestPDKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPDKit.release.xcconfig"; sourceTree = "<group>"; };
 		63A21E46464F2DE39B21C1342090931A /* Pods-TestPDKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestPDKit-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7D4ACFF06513D84A91001289EEB58EB7 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = PDKit/Color.swift; sourceTree = "<group>"; };
 		84B60BE237B47110C8204DD9BCC4DD48 /* PDKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDKit.release.xcconfig; sourceTree = "<group>"; };
 		891D94EA48068F9FCB73C0965F2A0281 /* Pods-TestPDKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TestPDKit.modulemap"; sourceTree = "<group>"; };
-		89E5D2D2F5F7CDACF6154CF590ED49FC /* PDKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PDKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		89E5D2D2F5F7CDACF6154CF590ED49FC /* PDKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PDKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A38BC36B46B6A36E4172C8A3E8BA5C58 /* Pods-TestPDKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestPDKit-acknowledgements.plist"; sourceTree = "<group>"; };
 		A8F991AE670924DA96680ED41611E8AE /* Pods-TestPDKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestPDKit.debug.xcconfig"; sourceTree = "<group>"; };
 		A98832F7A0F029C367526BB797BEFD41 /* Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Layout.swift; path = PDKit/Layout.swift; sourceTree = "<group>"; };
 		AAB4B300B7FEA6F61B948066D34AA67C /* PDKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PDKit-Info.plist"; sourceTree = "<group>"; };
-		ABE2E22F272C18720A99A47C202E40D3 /* PDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PDKit.framework; path = PDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE2E22F272C18720A99A47C202E40D3 /* PDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6157412A9E4D01B500D8A224D5A634 /* PDKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDKit-dummy.m"; sourceTree = "<group>"; };
 		C62718152D773F7CFB575824174E17C0 /* PDKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PDKit.debug.xcconfig; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -135,11 +135,11 @@
 		BA70FFA6C7BD23896F9095B61E043968 /* PDKit */ = {
 			isa = PBXGroup;
 			children = (
+				0423859A25EB8D8D00FB64C4 /* DisplayLink.swift */,
 				7D4ACFF06513D84A91001289EEB58EB7 /* Color.swift */,
 				EE97799CA8B24786111374CF35AE9821 /* Image.swift */,
 				A98832F7A0F029C367526BB797BEFD41 /* Layout.swift */,
 				505DECC467B2E5780E840AEBC93EB5CD /* MakeStyle.swift */,
-				506452F049B1DA332F4789CE1D8EB650 /* Service.swift */,
 				5DC7C56292D5C1C1C77F51425CA97DCD /* Pod */,
 				EC24EC558D551788B3EBBE526321A2B9 /* Support Files */,
 			);
@@ -311,8 +311,8 @@
 				7B98ED7AFA7C1A19557A2609B4B37ECF /* Image.swift in Sources */,
 				7357DB278F9C81ED4AB20975238EAAA5 /* Layout.swift in Sources */,
 				2BAAEBF8E61D2930DCC19793DA2FFD72 /* MakeStyle.swift in Sources */,
+				0423859B25EB8D8D00FB64C4 /* DisplayLink.swift in Sources */,
 				A211E833A14CE99B0FB09529820B9554 /* PDKit-dummy.m in Sources */,
-				85E6EBCE6E2B5E324E7B8C7BFC8B902F /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

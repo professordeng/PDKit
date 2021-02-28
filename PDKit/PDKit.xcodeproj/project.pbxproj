@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0423859F25EB8DA300FB64C4 /* DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423859E25EB8DA300FB64C4 /* DisplayLink.swift */; };
 		04894CA025E34F1900238BC6 /* PDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 04894C9E25E34F1900238BC6 /* PDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04894CA825E34F6F00238BC6 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04894CA725E34F6F00238BC6 /* Service.swift */; };
 		04894D0125E55B5F00238BC6 /* MakeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04894D0025E55B5F00238BC6 /* MakeStyle.swift */; };
 		04894D0725E55CBE00238BC6 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04894D0625E55CBE00238BC6 /* Layout.swift */; };
 		04894D1E25E5EBDB00238BC6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04894D1D25E5EBDB00238BC6 /* Color.swift */; };
@@ -16,10 +16,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0423859E25EB8DA300FB64C4 /* DisplayLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayLink.swift; sourceTree = "<group>"; };
 		04894C9B25E34F1900238BC6 /* PDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04894C9E25E34F1900238BC6 /* PDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDKit.h; sourceTree = "<group>"; };
 		04894C9F25E34F1900238BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04894CA725E34F6F00238BC6 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		04894D0025E55B5F00238BC6 /* MakeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeStyle.swift; sourceTree = "<group>"; };
 		04894D0625E55CBE00238BC6 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		04894D1D25E5EBDB00238BC6 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -56,9 +56,9 @@
 		04894C9D25E34F1900238BC6 /* PDKit */ = {
 			isa = PBXGroup;
 			children = (
+				0423859E25EB8DA300FB64C4 /* DisplayLink.swift */,
 				04894C9E25E34F1900238BC6 /* PDKit.h */,
 				04894C9F25E34F1900238BC6 /* Info.plist */,
-				04894CA725E34F6F00238BC6 /* Service.swift */,
 				04894D0025E55B5F00238BC6 /* MakeStyle.swift */,
 				04894D0625E55CBE00238BC6 /* Layout.swift */,
 				04894D1D25E5EBDB00238BC6 /* Color.swift */,
@@ -146,9 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0423859F25EB8DA300FB64C4 /* DisplayLink.swift in Sources */,
 				04894D0725E55CBE00238BC6 /* Layout.swift in Sources */,
 				04894D1E25E5EBDB00238BC6 /* Color.swift in Sources */,
-				04894CA825E34F6F00238BC6 /* Service.swift in Sources */,
 				04894D0125E55B5F00238BC6 /* MakeStyle.swift in Sources */,
 				04894D2725E5F1C100238BC6 /* Image.swift in Sources */,
 			);
