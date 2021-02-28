@@ -10,69 +10,54 @@ import PDKit
 
 class ViewController: UIViewController {
     
-    let startView: UIView = .init()
-    let endView  : UIView = .init()
-    
-    var displayLink: DisplayLink?
-    var status: Status = .init()
-    let xOffset: CGFloat = 0
-    let yOffset: CGFloat = 100
+    var status      : Status = .init(time: 0)
+    let colorView   : UIView = .init()
+    var displayLink : DisplayLink?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        startView.make {
+        colorView.make {
             view.addSubview($0)
             $0.backgroundColor = Color.green
-            $0.layer.cornerRadius = 50
+            $0.layer.cornerRadius = 10
         }.al.make {
-            $0.size(100)
-            $0.centerToSuperview()
+            $0.size(20)
+            $0.centerX(view.al.centerX, status.xOffset)
+            $0.centerY(view.al.centerY, status.yOffset)
         }
-        
-        endView.make {
-            view.addSubview($0)
-            $0.layer.borderWidth = 5
-            $0.layer.borderColor = Color.red.cgColor
-            $0.layer.cornerRadius = 50
-        }.al.make {
-            $0.size(100)
-            $0.centerXToSuperview()
-            $0.centerY(view.al.centerY, 100)
-        }
-        
     }
     
-    func move(duration: Int, fps: Int) {
-        let xStep = self.xOffset / CGFloat(duration * fps)
-        let yStep = self.yOffset / CGFloat(duration * fps)
-        
-        var sum: Int = 0
-        displayLink = .init(fps) {
-            sum += 1
-            if sum >= (duration*fps) { self.displayLink = nil }
-            
-            self.status.move(xStep: xStep, yStep: yStep)
-            self.startView.al.make {
-                $0.updateCenterX(self.status.xOffset)
-                $0.updateCenterY(self.status.yOffset)
-            }
+    func animate() {
+        status = status.update(interval: 0.1)
+        colorView.al.make {
+            $0.updateCenterX(status.xOffset)
+            $0.updateCenterY(status.yOffset)
         }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        move(duration: 1, fps: 60)
+        displayLink = (displayLink != nil) ? nil : .init(60) {
+            self.animate()
+        }
     }
 }
 
 extension ViewController {
     struct Status {
-        var xOffset: CGFloat = 0
-        var yOffset: CGFloat = 0
+        let radius : CGFloat = 40
+        var time   : CGFloat
+        var xOffset: CGFloat
+        var yOffset: CGFloat
         
-        mutating func move(xStep: CGFloat, yStep: CGFloat) {
-            xOffset += xStep
-            yOffset += yStep
+        init(time: CGFloat) {
+            self.time = time
+            xOffset = radius * (2*cos(time) - cos(2*time))
+            yOffset = radius * (2*sin(time) - sin(2*time))
+        }
+        
+        func update(interval: CGFloat) -> Self {
+            return .init(time: time + interval)
         }
     }
 }
