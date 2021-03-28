@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
     
     func animate() {
-        status = status.update(interval: 0.1)
+        status = status.update(interval: 0.01)
         colorView.al.make {
             $0.updateCenterX(status.xOffset)
             $0.updateCenterY(status.yOffset)
